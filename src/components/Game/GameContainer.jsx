@@ -1,4 +1,4 @@
-import Board from './Board';
+import Game from './Game';
 import { connect } from 'react-redux';
 
 function mapStateToProps(state) {
@@ -6,9 +6,9 @@ function mapStateToProps(state) {
     return {
         // propName seen by React : value-in-state
         cellValues: state.cellValues,
-        canHighlight: state.canHighlight
+        winningCombination: state.winningCombination
 
     }
 }
 
-export default connect(mapStateToProps)(Board);
+export default connect(mapStateToProps)(Game);
