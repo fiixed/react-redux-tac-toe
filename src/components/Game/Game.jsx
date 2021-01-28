@@ -1,14 +1,17 @@
 import React from 'react';
 
-import Board from '../Board/BoardContainer';
+import Board from '../Board/Board';
 import './Game.css';
 
-export default function Game() {
+export default function Game(props) {
     return (
         <>
             <div id="game">
                 <h1>Tic Tac Toe</h1>
-                <Board />
+                <Board 
+                    cellValues={props.cellValues}
+                    winningCombination={props.winningCombination}
+                />
             </div>
 
             <div id="modal-overlay">
