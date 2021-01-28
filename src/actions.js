@@ -1,8 +1,9 @@
 export const CLICK_CELL  = 'CLICK_CELL';
 
-export function clickCell() {
+export function clickCell(index) {
   return {
-    type: CLICK_CELL
+    type: CLICK_CELL,
+    payload: index
   };
 }
 

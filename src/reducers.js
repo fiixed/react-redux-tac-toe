@@ -6,7 +6,7 @@ import {
 export function tictactoe(state, action) {
 	switch(action.type) {
 		case CLICK_CELL:
-            console.log(`Cell clicked`);
+            console.log(`Cell ${action.payload} clicked`);
 			return {
                 ...state
 			}

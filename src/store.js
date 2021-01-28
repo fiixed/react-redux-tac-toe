@@ -4,7 +4,7 @@ import { tictactoe } from './reducers';
 const initialState = {
     cellValues: ['', '', '', '', '', '', '', '', ''],
     canHighlight: false,
-    winningCombination: []
+    winningCombination: [],
 };
 
 export const store = createStore(tictactoe, initialState);
