@@ -4,6 +4,9 @@ import Board from '../Board/Board';
 import './Game.css';
 
 export default function Game(props) {
+    // const onCellClicked = (cellIndex) => {
+    //     console.log(`Cell ${cellIndex} clicked`);
+    // }
     return (
         <>
             <div id="game">
@@ -11,6 +14,7 @@ export default function Game(props) {
                 <Board 
                     cellValues={props.cellValues}
                     winningCombination={props.winningCombination}
+                    cellClicked={props.handleClick}
                 />
             </div>
 
