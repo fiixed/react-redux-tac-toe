@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Board from '../Board/Board';
+import Board from '../Board/BoardContainer';
 import './Game.css';
 
 export default function Game() {

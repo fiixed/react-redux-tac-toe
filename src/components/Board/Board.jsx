@@ -1,20 +1,16 @@
 import React from 'react';
-import Cell from '../Cell/CellContainer';
+import Cell from '../Cell/Cell';
 
 import './Board.css';
 
-export default function Board() {
+export default function Board(props) {
+    
+    const cells = props.cellValues.map((value, index) => {
+        return <Cell key={index} value={value} canHighlight={false} />
+    });
     return (
         <div id="board">
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />      
+            {cells}
         </div>
         
     )

@@ -2,7 +2,7 @@ import { createStore } from 'redux';
 import { tictactoe } from './reducers';
 // initial state
 const initialState = {
-    value: "X",
+    cellValues: ['X', '0', 'X', '0', '0', 'X', '0', '', ''],
     canHighlight: false
 };
 
