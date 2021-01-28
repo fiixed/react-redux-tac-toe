@@ -18,7 +18,8 @@ export default function Game(props) {
                     cellClicked={props.handleClick}
                 />
             </div>
-            <ResultModal />
+            <ResultModal
+            isGameOver={props.isGameOver} />
             
         </>
     )
