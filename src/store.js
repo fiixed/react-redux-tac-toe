@@ -3,6 +3,7 @@ import { tictactoe } from './reducers';
 // initial state
 const initialState = {
     cellValues: ['', '', '', '', '', '', '', '', ''],
+    xIsNext: true,
     canHighlight: false,
     winningCombination: [],
 };
