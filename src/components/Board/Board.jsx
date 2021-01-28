@@ -10,7 +10,9 @@ export default function Board(props) {
         return <Cell 
                     key={index} 
                     value={value} 
-                    canHighlight={canHighlight} />
+                    canHighlight={canHighlight} 
+                    onClick={() => props.cellClicked(index)}
+                    />
     });
     return (
         <div id="board">
