@@ -6,7 +6,11 @@ import './Board.css';
 export default function Board(props) {
     
     const cells = props.cellValues.map((value, index) => {
-        return <Cell key={index} value={value} canHighlight={false} />
+        const canHighlight = props.winningCombination && props.winningCombination.indexOf(index) >= 0;
+        return <Cell 
+                    key={index} 
+                    value={value} 
+                    canHighlight={canHighlight} />
     });
     return (
         <div id="board">

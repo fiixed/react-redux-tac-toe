@@ -6,7 +6,8 @@ function mapStateToProps(state) {
     return {
         // propName seen by React : value-in-state
         cellValues: state.cellValues,
-        canHighlight: state.canHighlight
+        canHighlight: state.canHighlight,
+        winningCombination: state.winningCombination
 
     }
 }
