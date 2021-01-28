@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import './Cell.css';
 
 export default function Cell(props) {
+
     const cellClasses = classNames({
         cell: true,
         winner: props.canHighlight
