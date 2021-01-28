@@ -1,5 +1,6 @@
 import Game from './Game';
 import { connect } from 'react-redux';
+import { clickCell } from '../../actions';
 
 function mapStateToProps(state) {
     // Translate Redux state into React props
@@ -11,4 +12,12 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Game);
+function mapDispatchToProps(dispatch) {
+    return {
+        handleClick: () => {
+            dispatch(clickCell());
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Game);

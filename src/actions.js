@@ -1,8 +1,8 @@
-export const SET_SYMBOL  = 'SET_SYMBOL';
+export const CLICK_CELL  = 'CLICK_CELL';
 
-export function setSymbol() {
+export function clickCell() {
   return {
-    type: SET_SYMBOL
+    type: CLICK_CELL
   };
 }
 
