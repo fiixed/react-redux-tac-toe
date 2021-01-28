@@ -8,10 +8,11 @@ export function tictactoe(state, action) {
 		case CLICK_CELL:
             console.log(`Cell ${action.payload} clicked`);
             const newCellValues = [...state.cellValues];
-            newCellValues[action.payload] = "X";
+            newCellValues[action.payload] = state.xIsNext ? 'X' : '0';
 			return {
                 ...state,
-                cellValues: newCellValues
+                cellValues: newCellValues,
+                xIsNext: !state.xIsNext
 			}
 		default:
             return state;
