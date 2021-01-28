@@ -1,14 +1,14 @@
-import Cell from './Cell';
+import Board from './Board';
 import { connect } from 'react-redux';
 
 function mapStateToProps(state) {
     // Translate Redux state into React props
     return {
         // propName seen by React : value-in-state
-        value: state.value,
+        cellValues: state.cellValues,
         canHighlight: state.canHighlight
 
     }
 }
 
-export default connect(mapStateToProps)(Cell);
+export default connect(mapStateToProps)(Board);
