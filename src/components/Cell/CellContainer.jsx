@@ -5,7 +5,9 @@ function mapStateToProps(state) {
     // Translate Redux state into React props
     return {
         // propName seen by React : value-in-state
-        value: state.value
+        value: state.value,
+        canHighlight: state.canHighlight
+
     }
 }
 
