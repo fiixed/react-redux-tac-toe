@@ -1,4 +1,5 @@
 export const CLICK_CELL  = 'CLICK_CELL';
+export const NEW_GAME  = 'NEW_GAME';
 
 export function clickCell(index) {
   return {
@@ -6,4 +7,11 @@ export function clickCell(index) {
     payload: index
   };
 }
+
+export function newGAME() {
+    return {
+      type: NEW_GAME
+      
+    };
+  }
 
