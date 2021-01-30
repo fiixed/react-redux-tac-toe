@@ -19,7 +19,7 @@ export default function Cell(props) {
     useEffect(() => {
         console.log('a stupid requirement');
     });
-    
+
     const cellClasses = classNames({
         cell: true,
         winner: props.canHighlight
@@ -37,3 +37,6 @@ export default function Cell(props) {
         </button>
     )
 }
+
+
+
