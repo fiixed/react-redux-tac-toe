@@ -6,6 +6,7 @@ const initialState = {
     xIsNext: true,
     isGameOver: false,
     numberOfTurnsLeft: 9,
+    winner: undefined,
     winningCombination: [],
 };
 

@@ -19,7 +19,8 @@ export function tictactoe(state, action) {
                 cellValues: newCellValues,
                 xIsNext: !state.xIsNext,
                 isGameOver: calcResult.hasResult,
-                numberOfTurnsLeft: newNumberOfTurnsLeft
+                numberOfTurnsLeft: newNumberOfTurnsLeft,
+                winner: calcResult.winner
 			}
         }
             

@@ -8,6 +8,7 @@ function mapStateToProps(state) {
         // propName seen by React : value-in-state
         cellValues: state.cellValues,
         isGameOver: state.isGameOver,
+        winner: state.winner,
         winningCombination: state.winningCombination
 
     }
