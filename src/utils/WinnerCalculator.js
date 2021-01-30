@@ -26,7 +26,6 @@ export const calculateWinner = (cellValues, numberOfTurnsLeft, cellIndex) => {
             }
         }
     }
-    console.log(numberOfTurnsLeft);
     if (numberOfTurnsLeft === 0) {
         return {
             hasResult: true,
