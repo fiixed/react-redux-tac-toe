@@ -11,7 +11,7 @@ export default function Game(props) {
     return (
         <>
             <div id="game">
-                <h1>Tic Tac Toe</h1>
+                <h1>React Redux Tac Toe</h1>
                 <Board 
                     cellValues={props.cellValues}
                     winningCombination={props.winningCombination}
@@ -19,7 +19,9 @@ export default function Game(props) {
                 />
             </div>
             <ResultModal
-            isGameOver={props.isGameOver} />
+            isGameOver={props.isGameOver}
+            winner={props.winner}
+            startNewGame={props.startNewGame} />
             
         </>
     )
