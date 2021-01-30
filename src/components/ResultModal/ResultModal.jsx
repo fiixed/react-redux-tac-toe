@@ -19,7 +19,7 @@ export default function ResultModal(props) {
                         </div>
                     </div>
                     <div id="new-game-container">
-                        <button id="new-game-button">Start New Game</button>
+                        <button id="new-game-button" onClick={props.startNewGame}>Start New Game</button>
                     </div>
                 </div>
             </div>

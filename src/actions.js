@@ -8,7 +8,7 @@ export function clickCell(index) {
   };
 }
 
-export function newGAME() {
+export function newGame() {
     return {
       type: NEW_GAME
       

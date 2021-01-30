@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import { tictactoe } from './reducers';
 // initial state
-const initialState = {
+export const initialState = {
     cellValues: ['', '', '', '', '', '', '', '', ''],
     xIsNext: true,
     isGameOver: false,

@@ -20,7 +20,8 @@ export default function Game(props) {
             </div>
             <ResultModal
             isGameOver={props.isGameOver}
-            winner={props.winner} />
+            winner={props.winner}
+            startNewGame={props.startNewGame} />
             
         </>
     )

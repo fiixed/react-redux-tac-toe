@@ -1,8 +1,10 @@
 import { calculateWinner } from '../src/utils/WinnerCalculator';
 import {
-	CLICK_CELL,
+	CLICK_CELL, NEW_GAME,
 	
 } from './actions';
+
+import { initialState } from './store';
 
 
 export function tictactoe(state, action) {
@@ -24,6 +26,10 @@ export function tictactoe(state, action) {
                 winningCombination: calcResult.winningCombination
 			}
         }
+        case NEW_GAME:
+            return {
+                ...initialState
+            }
             
 		default:
             return state;
