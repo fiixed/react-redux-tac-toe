@@ -12,12 +12,14 @@ export function tictactoe(state, action) {
             const newCellValues = [...state.cellValues];
             if (newCellValues[action.payload] === '') {
                 newCellValues[action.payload] = state.xIsNext ? 'X' : '0';
-                const calcResult = calculateWinner(newCellValues, action.payload);
+                const newNumberOfTurnsLeft = state.numberOfTurnsLeft - 1;
+                const calcResult = calculateWinner(newCellValues, newNumberOfTurnsLeft, action.payload);
 			return {
                 ...state,
                 cellValues: newCellValues,
                 xIsNext: !state.xIsNext,
-                isGameOver: calcResult.hasResult
+                isGameOver: calcResult.hasResult,
+                numberOfTurnsLeft: newNumberOfTurnsLeft
 			}
         }
             

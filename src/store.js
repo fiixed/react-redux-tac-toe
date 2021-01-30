@@ -5,6 +5,7 @@ const initialState = {
     cellValues: ['', '', '', '', '', '', '', '', ''],
     xIsNext: true,
     isGameOver: false,
+    numberOfTurnsLeft: 9,
     winningCombination: [],
 };
 
