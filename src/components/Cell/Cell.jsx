@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classNames from 'classnames';
 
 import './Cell.css';
 
 export default function Cell(props) {
 
+     // componentDidUpdate(), watching a variable
+    //  useEffect(() => {
+    //     console.log(`cellValue is now ${props.value}`);
+    // }, [props.value]);
+    
+    // componentDidMount()
+    useEffect(() => {
+        console.log('This is ');
+    }, []);
+
+    // componentDidUpdate()
+    useEffect(() => {
+        console.log('a stupid requirement');
+    });
+    
     const cellClasses = classNames({
         cell: true,
         winner: props.canHighlight
