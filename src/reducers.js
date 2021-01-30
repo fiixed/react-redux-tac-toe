@@ -20,7 +20,8 @@ export function tictactoe(state, action) {
                 xIsNext: !state.xIsNext,
                 isGameOver: calcResult.hasResult,
                 numberOfTurnsLeft: newNumberOfTurnsLeft,
-                winner: calcResult.winner
+                winner: calcResult.winner,
+                winningCombination: calcResult.winningCombination
 			}
         }
             
